@@ -1,0 +1,13 @@
+{
+  "language": "Solidity",
+  "compiler": "v0.8.26+commit.8a97fa7a",
+  "optimizer": {
+    "enabled": true,
+    "runs": 200
+  },
+  "evmVersion": "cancun",
+  "license": "MIT",
+  "contract": "PQAccount.sol:PQAccount",
+  "contractAddress": "0x2504F2793886d959e5671e4027d290b736df8306",
+  "explorer": "https://testnet.qmsscan.io/address/0x2504F2793886d959e5671e4027d290b736df8306"
+}

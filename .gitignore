@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.venv/
+build/
+account_state.json
+wots_key.json
+deployer.key
+*.pkl
+githubapikey.txt
+*.key
+*.token
+*.txt.tmp

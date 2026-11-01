@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1600px; height: 900px; overflow: hidden;
+    background: radial-gradient(1200px 600px at 78% 18%, #1b1533 0%, #0a0b10 62%);
+    font-family: "DejaVu Sans", system-ui, sans-serif;
+    color: #e8eaf2; position: relative;
+  }
+  .grid-bg {
+    position: absolute; inset: 0;
+    background-image:
+      linear-gradient(rgba(139,92,246,.07) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(139,92,246,.07) 1px, transparent 1px);
+    background-size: 64px 64px;
+    mask-image: radial-gradient(circle at 75% 30%, #000 0%, transparent 72%);
+  }
+  .wrap { position: relative; padding: 84px 96px; height: 100%; display: flex; flex-direction: column; }
+  .kicker {
+    font-size: 17px; letter-spacing: .2em; text-transform: uppercase;
+    color: #8b5cf6; font-weight: 800; margin-bottom: 22px;
+  }
+  h1 { font-size: 104px; line-height: .98; letter-spacing: -.035em; font-weight: 800; }
+  h1 .muted { color: #6b708c; }
+  .sub { font-size: 27px; color: #a9aec6; margin-top: 26px; line-height: 1.45; max-width: 900px; }
+  .sub b { color: #e8eaf2; }
+  .cards { display: flex; gap: 18px; margin-top: 44px; }
+  .card {
+    background: rgba(18,20,28,.85); border: 1px solid #262a3d; border-radius: 14px;
+    padding: 20px 24px; min-width: 236px;
+  }
+  .card .lbl { font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: #8b90a8; font-weight: 700; margin-bottom: 9px; }
+  .card .val { font-family: "DejaVu Sans Mono", monospace; font-size: 22px; }
+  .card .val.ok { color: #34d399; }
+  .brand {
+    position: absolute; right: 96px; bottom: 74px; text-align: right;
+  }
+  .brand .qg { font-size: 20px; font-weight: 800; letter-spacing: -.01em; }
+  .brand .meta { font-size: 14px; color: #7b809a; font-family: "DejaVu Sans Mono", monospace; margin-top: 6px; }
+  .seal {
+    position: absolute; right: 96px; top: 84px;
+    width: 132px; height: 132px; border-radius: 50%;
+    border: 2px solid rgba(52,211,153,.45);
+    background: rgba(52,211,153,.07);
+    display: flex; align-items: center; justify-content: center; text-align: center;
+    font-size: 13px; font-weight: 800; letter-spacing: .1em; color: #34d399;
+    line-height: 1.35; text-transform: uppercase;
+  }
+</style>
+</head>
+<body>
+  <div class="grid-bg"></div>
+  <div class="seal">source<br>verified<br>QMSScan</div>
+  <div class="wrap">
+    <div class="kicker">QMS Testnet · chain 19480</div>
+    <h1>QuantumGuard<span class="muted">.</span></h1>
+    <div class="sub">A wallet authorised by <b>post-quantum signatures</b> —<br>not an ECDSA private key.</div>
+    <div class="cards">
+      <div class="card"><div class="lbl">scheme</div><div class="val">WOTS w=8</div></div>
+      <div class="card"><div class="lbl">signature</div><div class="val">1088 B</div></div>
+      <div class="card"><div class="lbl">key rotation</div><div class="val ok">on-chain</div></div>
+    </div>
+  </div>
+  <div class="brand">
+    <div class="qg">QuantumGuard · QMS Builder Program</div>
+    <div class="meta">0xdF59d13E03928a95A6A9BA5c9c1E815976D64778</div>
+  </div>
+</body>
+</html>
